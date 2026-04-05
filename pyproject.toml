@@ -13,7 +13,7 @@ dependencies = [
     "seaborn",
     "osmnx",
     "pandas",
-    "mapclassify",
+    "mapclassify==2.10.0",
     "numpy",
     "contextily",
     "matplotlib",
