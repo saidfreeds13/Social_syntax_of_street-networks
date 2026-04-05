@@ -1,7 +1,7 @@
-!pip install esda
-!pip install ezdxf
-!pip install osmnx mapclassify
-!pip install contextily
+pip install esda
+pip install ezdxf
+pip install osmnx mapclassify
+pip install contextily
 
 import osmnx as ox
 import geopandas as gpd
