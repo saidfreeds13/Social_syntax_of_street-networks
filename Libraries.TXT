@@ -1,4 +1,4 @@
-osmnx == 2.1.0
+osmnx
 geopandas == 1.1.2
 pandas==3.0.0
 folium == 0.20.0
