@@ -105,21 +105,19 @@ After the activation of *streets_mismatched()*, the function would ask for the w
 Two street hierarchies are exmpolicitly compared  
 
 ## C. Method installation ##
-In order to install the package, containng the method use python environmnent such as Colab, Jupeter Notebooks. 
+In order to install the package, containng the method use python environmnent, such as that of Colab. 
 
 Firstly, clone the repo:
 ``` 
-!git clone https://github.com/saidfreeds13/Social_syntax_of_street-networks/
+!git clone https://github.com/saidfreeds13/Social_syntax_of_street_networks/
 ```
 Then, install the git package and extract the package:
 ```
-!pip install git+https://github.com/saidfreeds13/Social_syntax_of_street-networks.git
-
-!pip install social_syntax_streets
+!pip install git+https://github.com/saidfreeds13/Social_syntax_of_street_networks.git
 ```
 Finally, import the method:
 ```
-import social_syntax_streets 
+import import Social_syntax_of_street_networks.SocSynStreets
 ```
 ## D. Experimental application ## (In dev)
 This section contains snippets from the experimental application of a method, for more detailed examples see the folder "Experiments"  
