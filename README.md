@@ -101,8 +101,8 @@ After the activation of *streets_mismatched()*, the function would ask for the w
 2. Global scale  
 3. Local scale   
 
-### Algorithm 2. Interpretation
-Two street hiearhies are exmpolicitly compared  
+### Algorithm 2. Interpretation (In dev)
+Two street hierarchies are exmpolicitly compared  
 
 ## C. Method installation ##
 In order to install the package, containng the method use python environmnent such as Colab, Jupeter Notebooks. 
@@ -121,7 +121,7 @@ Finally, import the method:
 ```
 import streets_syntax_social 
 ```
-## D. Experimental application ##
+## D. Experimental application ## (In dev)
 This section contains snippets from the experimental application of a method, for more detailed examples see the folder "Experiments"  
 
 ### The results from the algorithm 1 (a possible representation) 
@@ -130,7 +130,7 @@ This section contains snippets from the experimental application of a method, fo
 </p>
 <p align= "center"> Dashboard for the comparison of street-network morphology and social organization of space in southwestern part of the Grey Belt (St. Petersburg), author: Bereiya Said 2nd year master student of IDU ITMO </p>
 
-### The results from the algorithm 2 (a possible representation) 
+### The results from the algorithm 2 (a possible representation) (In dev)
 
 #### Mismatches of the whole street-network
 <p align="center">
@@ -138,7 +138,7 @@ This section contains snippets from the experimental application of a method, fo
 </p>
 <p align= "center">
 
-#### Mismatches on a single street-level
+#### Mismatches on a single street-level (In dev)
 
 
 ## E. Publications ##
