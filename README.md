@@ -16,7 +16,8 @@ Nowadays, more often than not former industrial areas experience the consequence
 
 
 ## A. The Block-Scheme of the method ##
-Street-network morphology via Space Syntax is taken for the  and its key measures of Integration and Choice. Whereas, the social organization is uderstood as a pattern of streets' functionality across the neighborhood. The operationalization for the social organization is done via a diveristy metric, showing how diverse and dense the functional uses of each street's segment.  
+Street-network morphology is operationalized via Space Syntax. Its key measuresare Integration and Choice calculated for street segments. One can prepare the dataset with syntactic measures in a QGis module "Graph Analysis". 
+Social organization of space is uderstood as a distribution of urban functions across a neighborhood. The operationalization for the social organization is done via a functional diveristy metric, showing how diverse and dense the social appropriation of each street's segment is.  
 
 <p align="center">
   <img width="1080" height="1080" alt="BS_methodology drawio" src="https://github.com/saidfreeds13/Theiss_package/blob/0bbd5afda8f602ead7da3659a5dacf80bcbe6af1/canvas.png">
