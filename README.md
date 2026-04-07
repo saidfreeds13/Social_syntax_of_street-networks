@@ -117,7 +117,7 @@ Then, install the git package and extract the package:
 ```
 Finally, import the method:
 ```
-import import Social_syntax_of_street_networks.SocSynStreets
+import Social_syntax_of_street_networks.SocSynStreets
 ```
 ## D. Experimental application ## (In dev)
 This section contains snippets from the experimental application of a method, for more detailed examples see the folder "Experiments"  
