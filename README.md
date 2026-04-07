@@ -1,6 +1,6 @@
 # Former industrial neighborhoods of Saint Petersburg: assessing relationships between street-network morphology and social organization of space. 
-*Developed by Bereiya Said, 2nd year master student of IDU ITMO*  
-*Supervised by*
+*Developed by Bereiya Said Adnanovich, a master student of IDU, ITMO University*  
+*Supervised by Baltyzhakova Tatiana Igorevna, an associate professor of IDU, ITMO University*
 
 ## Contents ##
 A. [The Block-Scheme of the method](https://github.com/saidfreeds13/Theiss_package/tree/master?tab=readme-ov-file#a-the-block-scheme-of-the-method)   
