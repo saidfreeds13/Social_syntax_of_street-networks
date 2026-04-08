@@ -1,4 +1,3 @@
-import osmnx as ox
 import geopandas as gpd
 import pandas as pd
 import folium
@@ -204,3 +203,65 @@ def streets_mismatched(data, functional_metric, int_g,int_l,ch_g,ch_l):
   print(("under [a_avg, a_global, a_local] ="),[a, a_g, a_l]), print(("under [b_avg, b_global, b_local] ="),[b,b_g, b_l])
   print("Where a is the weight of Integration metric and b is the weight of Choice")
   return data
+
+def split_mism(data, col, segment_street=None, save_n = None):
+    sm1 = data[data[col]>0]
+    sm2 = data[data[col]<0]
+
+    fig, ax = plt.subplots(1, 2, figsize=(25, 25), constrained_layout=True)
+
+
+    sm1.plot(
+            column=col,
+            cmap='magma',
+            scheme='NaturalBreaks',
+            ax=ax[0],
+            legend=True,
+            alpha=1,
+            linewidth=1
+        )
+
+    sm2[col] = abs(sm2[col])
+    sm2.plot(
+            column=col,
+            cmap='magma',
+            scheme='NaturalBreaks',
+            ax=ax[1],
+            legend=True,
+            alpha=1,
+            linewidth=1
+        )
+
+    # Zoom to segment
+    if segment_street is not None:
+        minx, miny, maxx, maxy = segment_street.total_bounds
+        ax[0].set_xlim(minx, maxx)
+        ax[0].set_ylim(miny, maxy)
+        ax[1].set_xlim(minx, maxx)
+        ax[1].set_ylim(miny, maxy)
+
+    cx.add_basemap(ax[0], crs=sm1.crs, source=cx.providers.CartoDB.DarkMatter)
+    cx.add_basemap(ax[1], crs=sm2.crs, source=cx.providers.CartoDB.DarkMatter)
+
+    # Styling
+
+
+    if segment_street is not None:
+      ax[0].set_axis_off()
+      ax[0].set_title(f'Natural breaks of positive {col}', fontsize=20, pad=20)
+      ax[1].set_axis_off()
+      ax[1].set_title(f'Natural breaks of negative {col}', fontsize=20, pad=20)
+    else:
+      ax[0].set_axis_off()
+      ax[0].set_title(f'Natural breaks of positive {col}', fontsize=30, pad=20)
+      ax[1].set_axis_off()
+      ax[1].set_title(f'Natural breaks of negative {col}', fontsize=30, pad=20)
+
+    plt.tight_layout()
+    if save_n == None:
+      pass
+    else:
+      plt.savefig(f"{save_n}_mismathes_Natural_Breaks_basemap.png", dpi=300, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
+    fig.set_tight_layout("tight")
+    plt.show()
