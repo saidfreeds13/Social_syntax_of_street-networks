@@ -132,7 +132,7 @@ def streets_social_sdataset(
   return streets_diversity1
 
 
-def visuals(data):
+def visuals(data, save_n=None):
   for col in data.select_dtypes(include='number').columns:
       fig, ax = plt.subplots(1, 1, figsize=(15, 12))
 
@@ -156,8 +156,14 @@ def visuals(data):
       ax.set_title(f'Natural Breaks of {col}', fontsize=16, pad=20)
 
       plt.tight_layout()
-     # plt.savefig(f'{col}_Natural_Breaks_basemap.png', dpi=300, bbox_inches='tight',
-                #  facecolor='white', edgecolor='none')
+        if save_n == None:
+          pass
+        else:
+          plt.savefig(f"{save_n}_mismathes_Natural_Breaks_basemap.png", dpi=300, bbox_inches='tight',
+                facecolor='white', edgecolor='none')  
+      
+      plt.savefig(f'{col}_Natural_Breaks_basemap.png', dpi=300, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
       plt.show()
 
 
