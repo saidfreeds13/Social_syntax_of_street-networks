@@ -155,9 +155,9 @@ def visuals(data, save_n=None):
       ax.set_title(f'Natural Breaks of {col}', fontsize=16, pad=20)
 
       plt.tight_layout()
-        if save_n == None:
+      if save_n == None:
           pass
-        else:
+      else:
           plt.savefig(f"{save_n}_mismathes_Natural_Breaks_basemap.png", dpi=300, bbox_inches='tight',
                 facecolor='white', edgecolor='none')  
       plt.show()
