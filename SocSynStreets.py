@@ -158,7 +158,7 @@ def visuals(data, save_n=None):
       if save_n == None:
           pass
       else:
-          plt.savefig(f"{save_n}_mismathes_Natural_Breaks_basemap.png", dpi=300, bbox_inches='tight',
+          plt.savefig(f"{save_n}__Natural_Breaks_{col}.png", dpi=300, bbox_inches='tight',
                 facecolor='white', edgecolor='none')  
       plt.show()
 
